@@ -1,0 +1,448 @@
+*{
+    font-family: 'Public Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F4F0;
+    margin: 0px;
+}
+
+.containers{
+    padding: 8px;
+}
+
+.card-head{
+    background-color: #201F24;
+    display: flex;
+    color: #FFFF;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.title-head{
+font-size: 15px;
+}
+
+.price-head{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.income-container{
+    background-color: #FFFF;
+    color: #201F24;
+}
+
+.expenses-container{
+    background-color: #FFFF;
+    color: #201F24;
+}
+
+.pots-container{
+    grid-area: pots-container;
+    padding: 15px;
+    background-color: #FFFF;
+    color: #201F24;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "title info"
+    "potsave potsave"
+    "savings gift"
+    "concert-ticket new-laptop";
+
+    border-radius: 12px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.main-pot-title{
+ grid-area: title;
+}
+
+.main-pot-info{
+    grid-area: info;
+    font-size: 13px;
+    height: 13px;
+    margin: 19px;
+    text-align: end;
+}
+
+.pot-saves-container{
+    padding : 12px;
+    border-radius: 12px;
+    background-color: #F8F4F0;
+    grid-area: potsave;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "inconpot save-title"
+    "inconpot save-price";
+    
+}
+
+.iconpot{
+    grid-area: inconpot;
+    align-self: center;
+    justify-self: center;
+}
+
+.save-title{
+    grid-area: save-title;
+    font-size: 14px;
+}
+
+.save-price{
+    grid-area: save-price;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pot-card{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 5px #277C78 solid;
+    padding-left:15px;
+    border-radius: 5px;
+}
+
+.pot-title{
+    margin : 0px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.pot-price{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.savings{
+    grid-area: savings;
+}
+
+.gift{
+    grid-area: gift;
+    border-left: 5px #82C9D7 solid;
+}
+
+.concert-ticket{
+    grid-area: concert-ticket;
+    border-left: 5px #93674F solid;
+}
+
+.new-laptop{
+    grid-area: new-laptop;
+    border-left: 5px #F2CDAC solid;
+}
+
+.transactions-container{
+    grid-area: transactions-container;
+    padding: 15px;
+    background-color: #FFFF;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-template-areas:
+    "transtitle transview"
+    "transaction1 transaction1"
+    "transaction2 transaction2";
+
+    margin-bottom: 10px;
+}
+
+.trans-title{
+    grid-area: transtitle;
+    margin: 0px;
+}
+
+.trans-view{
+    grid-area: transview;
+    margin: 0px;
+    text-align: end;
+    font-size: 13px;
+}
+
+.transaction1{
+    grid-area: transaction1;
+ display: grid;
+ grid-template-columns: 45px 3fr 2fr;
+ grid-template-areas:
+ "trans-img test trans-price"
+ "trans-img trans-name trans-name"
+ "trans-img test1 trans-date";
+ grid-template-rows: 15px 10px 15px;
+}
+
+.trans-img{
+    grid-area: trans-img;
+    width: 35px;
+    border-radius: 50px;
+    align-self: center;
+}
+
+.trans-name{
+    grid-area: trans-name;
+    font-weight: bold;
+font-size: 13px;
+margin: 0px;
+text-align: start;
+
+}
+
+.trans-price{
+    grid-area: trans-price;
+    color: #277C78;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    text-align: end;
+
+}
+
+.trans-date{
+    grid-area: trans-date;
+    font-size: 12px;
+    margin: 0px;
+    text-align: end;
+
+}
+
+.transaction2{
+    grid-area: transaction2;
+ display: grid;
+ grid-template-columns: 45px 3fr 2fr;
+ grid-template-areas:
+ "trans2-img test trans2-price"
+ "trans2-img trans2-name trans2-name"
+ "trans2-img test1 trans2-date";
+ grid-template-rows: 15px 10px 15px;
+}
+
+.trans2-img{
+    grid-area: trans2-img;
+    width: 35px;
+    border-radius: 50px;
+    align-self: center;
+}
+
+.trans2-name{
+    grid-area: trans2-name;
+    font-weight: bold;
+font-size: 13px;
+margin: 0px;
+text-align: start;
+
+}
+
+.trans2-price{
+    grid-area: trans2-price;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    text-align: end;
+}
+
+.trans2-date{
+    grid-area: trans2-date;
+    font-size: 12px;
+    margin: 0px;
+    text-align: end;
+
+}
+
+.recurring-container{
+    grid-area: recurring-container ;
+    padding: 15px;
+    background-color: #FFFF;
+    color: #201F24;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    "recurring-title recurring-details"
+    "recurring1 recurring1"
+    "recurring2 recurring2"
+    "recurring3 recurring3";
+
+    margin-bottom: 30px;
+}
+
+.recurring-title{
+    grid-area: recurring-title;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.recurring-details{
+    grid-area: recurring-details;
+    font-size: 13px;
+    margin: 0px;
+    text-align: end;
+}
+
+.card-recurring{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: #277C78 5px solid;
+    background-color: #F8F4F0;
+    margin-bottom: 10px;
+}
+
+.title-recurring{
+    margin: 0px;
+}
+
+.price-recurring{
+    margin: 0px;
+    font-weight: bold;
+}
+
+.recurring1{
+    grid-area: recurring1;
+}
+
+.recurring2{
+    grid-area: recurring2;
+    border-left: #F2CDAC 5px solid;
+
+}
+
+.recurring3{
+    grid-area: recurring3;
+    border-left: #82C9D7 5px solid;
+
+}
+
+.menu-mobile{
+    background-color: #201F24;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-bottom: 0px;
+}
+
+.home{
+    padding: 10px 25px;
+    background-color: #FFFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: #277C78 5px solid;
+    fill: #277C78;
+}
+
+.menu-pc{
+    display: none;
+}
+
+@media(min-width: 700px) {
+    
+    .header-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .card-head{
+        width: 30%;
+    }
+
+    .pots-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "title te info"
+        "potsave savings gift"
+        "potsave concert-ticket new-laptop";
+    }
+}
+
+@media(min-width: 1200px){
+
+    .menu-mobile{
+        display: none;
+    }
+
+    body{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    .containers{
+        width: 100%;
+    }
+
+    .menu-pc{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: #201F24;
+        color: #FFFF;
+    }
+
+    .menu-title{
+        margin-left: 20px;
+    }
+
+    .pc-home{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-left: 20px;
+    }
+
+    .pc-menu-home{
+        background-color: #F8F4F0;
+        width: 210px;
+        border-left: #277C78 4px solid;
+        color: #201F24;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+    }
+
+    .img-pc{
+        padding-right: 15px;
+    }
+
+    .pc-design{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "pots-container budgets-container"
+        "transactions-container budgets-container"
+        "transactions-container budgets-container"
+        "transactions-container recurring-container";
+    }
+
+    .recurring-container{
+        margin-bottom: 10px;
+    }
+
+}
