@@ -428,6 +428,9 @@ text-align: start;
 
     .img-pc{
         padding-right: 15px;
+        width: 35px;
+        align-self: center;
+        height: 35px;
     }
 
     .pc-design{

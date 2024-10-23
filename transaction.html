@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/transaction-style.css">
+    <title>Finance</title>
+</head>
+
+<body>
+
+
+
+    <div class="containers">
+        <header>
+            <h2 class="main-title">Transactions</h2>
+        </header>
+
+        <div class="transactions-container">
+
+            <div class="search">
+
+                <input placeholder="Search transaction" class="txtsearch" type="text">
+                <div class="item-search">
+                    <p class="sortby-p">Sort by</p>
+                    <select class="sort">
+                        <option value="Latest">Latest</option>
+                        <option value="Oldest">Oldest</option>
+                        <option value="A to Z">A to Z</option>
+                        <option value="Z to A">Z to A</option>
+                        <option value="Highest">Highest</option>
+                        <option value="Lowest">Lowest</option>
+                    </select>
+                </div>
+
+                <img class="search-img" src="assets/images/icon-sort-mobile.svg" alt="">
+
+                <img class="search-img" src="assets/images/icon-filter-mobile.svg" alt="">
+
+                <div>
+                    <p class="sortby-p">Category</p>
+                    <select class="filter">
+                        <option value="All Transactions">All Transactions</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Goceries">Goceries</option>
+                        <option value="Dining Out">Dining Out</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Personal Care">Personal Care</option>
+                        <option value="Education">Education</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="General">General</option>
+
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="info-container">
+
+                <div class="item-info">
+                    <p class="info-p">Recipient/Sender&</p>
+                    <p class="info-category info-p">Category</p>
+
+                </div>
+
+                <div class="price-date">
+                    <h2 class="info-price">Amount</h2>
+                    <p class="info-date">Transaction Date</p>
+                </div>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="card-img-info">
+                        <img class="card-img" src="assets/images/avatars/savory-bites-bistro.jpg" alt="">
+                        <div class="card-info">
+                            <h2 class="info-title">Bravo</h2>
+                            <p class="info-category">Personal Care</p>
+                        </div>
+                    </div>
+
+                    <div class="price-date">
+                        <h2 class="info-price">-$25.00</h2>
+                        <p class="info-date">29 Aug 2024</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="menu-mobile">
+
+        <img class="home" src="assets/images/icon-nav-overview.svg" alt="">
+
+        <img class="transaction" src="assets/images/icon-nav-transactions.svg">
+
+        <img class="budget" src="assets/images/icon-nav-budgets.svg" alt="">
+
+        <img class="pot" src="assets/images/icon-nav-pots.svg" alt="">
+
+        <img class="recurring" src="assets/images/icon-nav-recurring-bills.svg" alt="">
+
+    </div>
+
+    <div class="menu-pc">
+        <h2 class="menu-title">finance</h2>
+        <div class="pc-home pc-menu-home">
+            <p>Overview</p>
+            <img class="img-pc" src="assets/images/icon-nav-overview.svg" alt="">
+        </div>
+
+        <div class="pc-transaction pc-home">
+            <p>Transactions</p>
+            <img class="img-pc" src="assets/images/icon-nav-transactions.svg" alt="">
+        </div>
+
+        <div class="pc-budgets pc-home">
+            <p>Budgets</p>
+            <img class="img-pc" src="assets/images/icon-nav-budgets.svg" alt="">
+        </div>
+
+        <div class="pc-pots pc-home">
+            <p>Pots</p>
+            <img class="img-pc" src="assets/images/icon-nav-pots.svg" alt="">
+        </div>
+
+        <div class="pc-recurring pc-home">
+            <p>Recurring Bills</p>
+            <img class="img-pc" src="assets/images/icon-nav-recurring-bills.svg" alt="">
+        </div>
+
+    </div>
+
+    <script src="js/data-transaction.js"></script>
+    <script src="js/app-transaction.js"></script>
+
+</body>
+
+</html>

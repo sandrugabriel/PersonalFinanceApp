@@ -1,0 +1,281 @@
+* {
+    font-family: 'Public Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F4F0;
+    margin: 0px;
+}
+
+/* 
+a{
+   height: 43px;
+} */
+
+.containers {
+    padding: 8px;
+}
+
+.transactions-container {
+    background-color: #FFFF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.txtsearch {
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 6px 12px;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: rgb(234, 234, 234) 1px solid;
+    margin-bottom: 20px;
+}
+
+.card-img-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.card-info {
+    padding-left: 5px;
+}
+
+.info-title {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.info-category {
+    font-size: 13px;
+    margin: 0px;
+}
+
+.info-price {
+    font-size: 14px;
+    margin: 0px;
+    text-align: end;
+}
+
+.info-date {
+    font-size: 13px;
+    margin: 0px;
+    align-items: end;
+}
+
+.info-price2 {
+    font-size: 14px;
+    margin: 0px;
+    text-align: end;
+    color: #277C78;
+}
+
+
+
+
+
+
+
+.menu-mobile {
+    background-color: #201F24;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-bottom: 0px;
+}
+
+.transaction {
+    padding: 10px 25px;
+    background-color: #FFFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: #277C78 5px solid;
+    fill: #277C78;
+}
+
+.menu-pc {
+    display: none;
+}
+
+.sort {
+    width: 72px;
+    height: 31px;
+    border-radius: 5px;
+
+}
+
+.filter {
+    width: 123px;
+    height: 31px;
+    border-radius: 5px;
+
+}
+
+.sortby-p {
+    display: none;
+}
+
+
+@media(min-width: 700px) {
+
+    .search-img {
+        display: none;
+    }
+
+    .sortby-p {
+        display: inline;
+        color: #696868;
+    }
+
+    .info-container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: rgb(234, 234, 234) 1px solid;
+        margin-bottom: 20px;
+
+    }
+
+    .info-p {
+        font-size: 13px;
+        color: #696868;
+    }
+
+    .item-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .info-title {
+        padding-right: 20px;
+    }
+
+    .price-date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+
+    }
+
+    .info-price {
+        padding-left: 20px;
+    }
+
+
+    .info-price2 {
+        padding-left: 20px;
+    }
+
+
+}
+
+@media(min-width: 1200px) {
+
+    .menu-mobile {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    .containers {
+        width: 100%;
+    }
+
+    .menu-pc {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: #201F24;
+        color: #FFFF;
+    }
+
+    .menu-title {
+        margin-left: 20px;
+    }
+
+    .pc-home {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-left: 20px;
+    }
+
+    .pc-transaction {
+        background-color: #F8F4F0;
+        width: 210px;
+        border-left: #277C78 4px solid;
+        color: #201F24;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+    }
+
+    .img-pc {
+        padding-right: 15px;
+        align-self: center;
+        width: 35px;
+        height: 35px;
+    }
+
+    .pc-design {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "pots-container budgets-container"
+            "transactions-container budgets-container"
+            "transactions-container budgets-container"
+            "transactions-container recurring-container";
+    }
+
+}
